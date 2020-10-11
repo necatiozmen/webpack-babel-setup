@@ -9,12 +9,12 @@ module.exports = {
       {
         test: /\.(js)$/,
         exclude: /node_modules/,
-        use: ['babel-loader']
+        use: ['babel-loader','eslint-loader']
       }
     ]
   },
   resolve: {
-    extensions: ['*', '.js']
+    extensions: ['*', '.js', '.jsx']
   },
   plugins: [
     new CleanWebpackPlugin(),
